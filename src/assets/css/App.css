@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-gray-950; 
+}
+
+.App {
+  text-align: center;
+}
+
+/* sizing of map container for Leaflet*/
+
+.leaflet-container{
+  height: 590px;
+}
+

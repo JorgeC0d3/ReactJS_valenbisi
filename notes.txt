@@ -1,0 +1,56 @@
+API de Valenbisi:
+
+Total: 273 estaciones.
+
+Parámetros:
+
+number: Numero del portal donde se situa la estacion de valenbisi
+open: La estacion de valenbisi se encuentra en funcionamiento. T-activo F-cerrado
+available: Numero de bicicletas que estan disponible para que los usuarios las alquilen en las estaciones
+free: Numero de espacios libres en las estaciones para que los usuarios dejen las bicicletas
+total: Numero total de plazas en las estaciones, ya tengan bicicletas o esten vacias
+updated_at: Fecha cuando la informacion de cada estacion ha sido actualizada
+geo_point_2d: Coordenadas donde se encuentra la estacion. Version X,Y
+
+Primeras 100 estaciones: https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit=100
+Siguientes 100 estaciones: https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit=100&offset=99
+Últimas 73 estaciones: https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit=100&offset=199
+
+
++ info Web:
+
+https://valencia.opendatasoft.com/explore/dataset/valenbisi-disponibilitat-valenbisi-dsiponibilidad/api/?flg=es-es
+
+************************************************************************************************
+
+Leaflet react:
+
+https://react-leaflet.js.org/docs/example-layers-control/
+
+
+npm install leaflet
+npm install react-leaflet
+
+
+************************************************************************************************
+
+Intalación de Tailwind:
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+Add the paths to all of your template files in your tailwind.config.js file:
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Add the @tailwind directives for each of Tailwind’s layers to your main CSS file:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
